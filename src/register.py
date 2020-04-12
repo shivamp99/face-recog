@@ -13,7 +13,7 @@ import datetime
 
 def register_user(email, password, name, period):
     cred = credentials.Certificate("firebase-sdk.json")
-    default_app = firebase_admin.initialize_app(cred)
+    register_app = firebase_admin.initialize_app(cred,'1')
 
     flag = 1
 

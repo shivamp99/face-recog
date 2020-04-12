@@ -43,7 +43,7 @@ def check_active_subscription(account_info):
 
 def user_signin(email, password):
     cred = credentials.Certificate("firebase-sdk.json")
-    default_app = firebase_admin.initialize_app(cred)
+    default_app = firebase_admin.initialize_app(cred,[])
 
     config = {
         "apiKey": "AIzaSyClkYXaXc4HfmhFPlDoA1RC1GujPLa6gVQ",

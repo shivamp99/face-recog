@@ -54,7 +54,7 @@ def get_details(collection,name):
 # input parameters: (pymongo) db.collection, (string) photo file path from known_images
 # output: (dict) the details of person 
 def get_details_file(collection,filepath):
-    result = collections.find_one({'filepath':filepath})
+    result = collection.find_one({'filepath':filepath})
     return result
 
 
